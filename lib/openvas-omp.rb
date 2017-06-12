@@ -513,10 +513,7 @@ module OpenVASOMP
 		def report_get_byid (id,format)
 			decode=Array["HTML","NBE","PDF"]
 			xr=report_get_raw("report_id"=>id,"format"=>format)
-			resp=xr.elements['get_reports_response'].elements['report'].text
-			if decode.include?(format) 
-				resp=Base64.decode64(resp)
-			end
+			resp=xr.elements['get_reports_response'].elements['report/report']
 			return resp
 		end
 
