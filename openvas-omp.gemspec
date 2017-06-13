@@ -1,5 +1,3 @@
-require 'openvas-omp'
-
 Gem::Specification.new do |spec|
   spec.name           = "openvas-omp"
   spec.version        = "0.0.4"
