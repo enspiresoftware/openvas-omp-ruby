@@ -1,4 +1,8 @@
-Gem::Specification.new do |spec|
+# coding: utf-8
+lib = File.expand_path('../lib', __FILE__)
+$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+
+require 'autotask_api/version'Gem::Specification.new do |spec|
   spec.name           = "openvas-omp"
   spec.version        = "0.0.4"
   spec.homepage       = "http://github.com/kost/openvas-omp"
@@ -10,4 +14,6 @@ Gem::Specification.new do |spec|
 This library is used for communication with OpenVAS manager over OMP.
 You can start, stop, pause and resume scan. Watch progress and status of
 scan, download report, etc.}
+  
+  spec.require_paths = ["lib"]
 end
