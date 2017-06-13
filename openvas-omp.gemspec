@@ -1,7 +1,7 @@
 require 'openvas-omp'
 
 Gem::Specification.new do |spec|
-  spec.name "openvas-omp"
+  spec.name = "openvas-omp"
   spec.homepage = "http://github.com/kost/openvas-omp"
   spec.authors  = ["Vlatko Kosturjak"]
   spec.email = "vlatko.kosturjak@gmail.com"
