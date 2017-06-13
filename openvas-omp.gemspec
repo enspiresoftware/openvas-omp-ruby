@@ -2,7 +2,7 @@ require 'openvas-omp'
 
 Gem::Specification.new do |spec|
   spec.name           = "openvas-omp"
-  spec.version        = OpenVASOMP::VERSION
+  spec.version        = File.exist?('VERSION') ? File.read('VERSION') : ""
   spec.homepage       = "http://github.com/kost/openvas-omp"
   spec.authors        = ["Vlatko Kosturjak"]
   spec.email          = "vlatko.kosturjak@gmail.com"
