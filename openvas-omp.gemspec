@@ -2,7 +2,7 @@
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
-require 'autotask_api/version'Gem::Specification.new do |spec|
+Gem::Specification.new do |spec|
   spec.name           = "openvas-omp"
   spec.version        = "0.0.4"
   spec.homepage       = "http://github.com/kost/openvas-omp"
